@@ -4,5 +4,7 @@
 </div>
 
 Welcome to the Laravel Important Topics repository! This space is dedicated to exploring, documenting, and discussing key concepts, techniques, and best practices in the Laravel framework.
+<br>
+*Note: Very basic topics are not included.
 
 ---
