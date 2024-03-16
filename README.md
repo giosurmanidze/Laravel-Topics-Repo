@@ -38,3 +38,5 @@ Topics Covered
 Route Model Binding | :book: [Route Model Binding](https://laravel.com/docs/11.x/routing#route-model-binding) <br> :clapper: [ Laravel Route Model Binding: All You Need To Know](https://www.youtube.com/watch?v=6dEfxGLgevM) 
 Routing Advanced | :clapper: [Laravel: 8 Tips for Advanced Routing](https://www.youtube.com/watch?v=_BIhuX8owTo)
 Route Redirect | :book: [Route Redirect](https://laravel.com/docs/11.x/routing#redirect-routes)
+Route Naming | :book: [Names Routes](https://laravel.com/docs/11.x/routing#named-routes) <br> [Laravel: Why You Need Route Names?](https://www.youtube.com/watch?v=7lalb6HtR1c)
+Route Groups | :book: [Route Groups](https://laravel.com/docs/11.x/routing#route-groups) <br> :clapper: [ Laravel Route Grouping: Simple to Very Complex](https://www.youtube.com/watch?v=I6kyfSmPhn8)
