@@ -35,5 +35,6 @@ Topics Covered
 | Topic | Learning Links |
 | ----- | ----- |
 | Eager Loading and N+1 Query Problem |:book: [Relationships: Eager Loading](https://laravel.com/docs/eloquent-relationships#eager-loading) <br> :clapper: [Laravel N+1 Query Detector: Don't Forget Eager Loading](https://www.youtube.com/watch?v=MbN7BIcUnPA) <br> :page_facing_up: [Eloquent Performance: 4 Examples of N+1 Query Problems](https://laravel-news.com/laravel-n1-query-problems#content-what-is-the-n1-query-problem) <br> :question: [Practise Examples](/practise_eager_loading_n1_problem/README.md)
-
-
+Route Model Binding | :book: [Route Model Binding](https://laravel.com/docs/11.x/routing#route-model-binding) <br> :clapper: [ Laravel Route Model Binding: All You Need To Know](https://www.youtube.com/watch?v=6dEfxGLgevM) 
+Routing Advanced | :clapper: [Laravel: 8 Tips for Advanced Routing](https://www.youtube.com/watch?v=_BIhuX8owTo)
+Route Redirect | :book: [Route Redirect](https://laravel.com/docs/11.x/routing#redirect-routes)
