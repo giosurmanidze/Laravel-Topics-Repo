@@ -6,9 +6,10 @@
 **Before we get started, check out this helpful link
 Laravel N+1 issue detector to help you easily identify n+1 issues in your application**
 </h3>
+
 Link: https://github.com/beyondcode/laravel-query-detector
 
-
+---
 <br>
 <br>
 <h3>:question: Task1 Scenario:</h3>
