@@ -2,6 +2,14 @@
 :question: Practise Eager Loading And N+1 Problem
 </h1>
 
+<h3>
+**Before we get started, check out this helpful link
+Laravel N+1 issue detector to help you easily identify n+1 issues in your application**
+</h3>
+Link: https://github.com/beyondcode/laravel-query-detector
+
+
+<br>
 <br>
 <h3>:question: Task1 Scenario:</h3>
 Suppose we have two Eloquent models: ` Post `  and ` Comment `. Each post can have multiple comments associated with it, and we want to display a list of posts along with their comments.
@@ -102,22 +110,25 @@ But wait 😩, you would say that we are using eager loading, Post::with('commen
 <br>
 **What do you think what is issue here and how to fix it?**
 
-
 <br>
 <h3>Explanation:</h3
 
-So Because, in Blade, 
-```php 
-  $post->comments()->count() 
-``` 
+So Because, in Blade,
+
+```php
+  $post->comments()->count()
+```
+
 doesn't actually load that relationship from the memory.
 
 ```php
 $post->comments() means the METHOD of relation
 ```
+
 ```php
 $post->comments means the DATA eager loaded into memory
 ```
+
 So, the method of relation would query the database for each post. But if you load the data, without () symbols, it will successfully use the eager loaded data:
 
 <h3>Updated Code Example:</h3>
@@ -134,7 +145,9 @@ public function index()
 }
 
 ```
+
 Blade code:
+
 ```php
 
 @foreach($posts as $post)
