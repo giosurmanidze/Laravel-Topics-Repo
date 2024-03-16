@@ -34,6 +34,6 @@ Topics Covered
 
 | Topic | Learning Links |
 | ----- | ----- |
-| Eager Loading and N+1 Query Problem |:book: [Relationships: Eager Loading](https://laravel.com/docs/eloquent-relationships#eager-loading) <br> :clapper: [Laravel N+1 Query Detector: Don't Forget Eager Loading](https://www.youtube.com/watch?v=MbN7BIcUnPA) <br> :page_facing_up: [Eloquent Performance: 4 Examples of N+1 Query Problems](https://laravel-news.com/laravel-n1-query-problems#content-what-is-the-n1-query-problem) <br> :question: 
+| Eager Loading and N+1 Query Problem |:book: [Relationships: Eager Loading](https://laravel.com/docs/eloquent-relationships#eager-loading) <br> :clapper: [Laravel N+1 Query Detector: Don't Forget Eager Loading](https://www.youtube.com/watch?v=MbN7BIcUnPA) <br> :page_facing_up: [Eloquent Performance: 4 Examples of N+1 Query Problems](https://laravel-news.com/laravel-n1-query-problems#content-what-is-the-n1-query-problem) <br> :question: [Practise Examples](/practise_eager_loading_n1_problem/README.md)
 
 
