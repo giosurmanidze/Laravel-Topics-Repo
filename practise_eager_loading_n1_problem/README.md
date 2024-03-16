@@ -66,7 +66,7 @@ In the updated code, we use the with('comments') method to eager load the commen
 <br>
 <br>
 <h3>:question: Task2 Scenario:</h3>
-Let's say that you have the hasMany relationship between posts and views, and you need to list the posts with the number of views for each of them.
+Let's say that you have the hasMany relationship between posts and comments, and you need to list the posts with the number of comments for each of them.
 
 <br>
 <h3>Code Example:</h3>
@@ -77,7 +77,7 @@ Controller code could be:
 
 public function index()
 {
-    $posts = Post::with('views')->get();
+    $posts = Post::with('comments')->get();
 
     return view('posts.index', compact('posts'));
 }
@@ -87,10 +87,10 @@ public function index()
 And then, in the Blade file, you do a foreach loop for the table:
 
 ```php
-@foreach($authors as $author)
+@foreach($posts as $post)
     <tr>
-        <td>{{ $author->name }}</td>
-        <td>{{ $author->books()->count() }}</td>
+        <td>{{ $post->name }}</td>
+        <td>{{ $post->comments()->count() }}</td>
     </tr>
 @endforeach
 ```
@@ -98,7 +98,7 @@ And then, in the Blade file, you do a foreach loop for the table:
 Looks good, right 😊? And it works. But look at the Debugbar data.
 Install Debugbar From: https://github.com/barryvdh/laravel-debugbar
 
-But wait 😩, you would say that we are using eager loading, Post::with('views'), so why there are so many queries happening?
+But wait 😩, you would say that we are using eager loading, Post::with('comments'), so why there are so many queries happening?
 <br>
 **What do you think what is issue here and how to fix it?**
 
@@ -108,17 +108,17 @@ But wait 😩, you would say that we are using eager loading, Post::with('views'
 
 So Because, in Blade, 
 ```php 
-  $author->books()->count() 
+  $post->comments()->count() 
 ``` 
 doesn't actually load that relationship from the memory.
 
 ```php
-$author->books() means the METHOD of relation
+$post->comments() means the METHOD of relation
 ```
 ```php
-$author->books means the DATA eager loaded into memory
+$post->comments means the DATA eager loaded into memory
 ```
-So, the method of relation would query the database for each author. But if you load the data, without () symbols, it will successfully use the eager loaded data:
+So, the method of relation would query the database for each post. But if you load the data, without () symbols, it will successfully use the eager loaded data:
 
 <h3>Updated Code Example:</h3>
 
@@ -128,7 +128,7 @@ Controller code:
 
 public function index()
 {
-    $posts = Post::withCount('views')->get();
+    $posts = Post::withCount('comments')->get();
 
     return view('posts.index', compact('posts'));
 }
@@ -140,7 +140,7 @@ Blade code:
 @foreach($posts as $post)
     <tr>
         <td>{{ $post->name }}</td>
-        <td>{{ $post->views_count }}</td>
+        <td>{{ $post->comments_count }}</td>
     </tr>
 @endforeach
 
