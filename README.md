@@ -56,3 +56,4 @@ PHP/Laravel Design Patterns | :clapper: [Becoming a better developer by using th
 Creational Design Patterns | :page_facing_up: [Creational Design Patterns](https://refactoring.guru/design-patterns/creational-patterns)
 Structural Design Patterns | :page_facing_up: [Structural Design Patterns](https://refactoring.guru/design-patterns/structural-patterns) 
 Behavioral Design Patterns | :page_facing_up:  [Behavioral Design Patterns](https://refactoring.guru/design-patterns/behavioral-patterns)
+Eloquent: API Resources | :book: [API Resources](https://laravel.com/docs/11.x/eloquent-resources) <br> :book: [Data Wrapping](https://laravel.com/docs/11.x/eloquent-resources#data-wrapping)
