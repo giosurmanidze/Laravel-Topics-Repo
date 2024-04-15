@@ -57,3 +57,4 @@ Creational Design Patterns | :page_facing_up: [Creational Design Patterns](https
 Structural Design Patterns | :page_facing_up: [Structural Design Patterns](https://refactoring.guru/design-patterns/structural-patterns) 
 Behavioral Design Patterns | :page_facing_up:  [Behavioral Design Patterns](https://refactoring.guru/design-patterns/behavioral-patterns)
 Eloquent: API Resources | :book: [API Resources](https://laravel.com/docs/11.x/eloquent-resources) <br> :book: [Data Wrapping](https://laravel.com/docs/11.x/eloquent-resources#data-wrapping)
+Request Lifecycle | :question: [Lifecycle of a request in Laravel](/request_lifecycle/README.md)
